@@ -64,6 +64,14 @@ public class REexample2 {
 
 	}
 
+	/**
+	 * This is the only function that needs to be implemented by the "user" This
+	 * is the "semantic parser" of the syntex tree denoted by nodes.
+	 **/
+	public static boolean matchRE(final String s, final Node matcher) {
+		return true;
+	}
+
 	private static Leaf word(final String s) {
 		return new Leaf(Leaf.LeafType.WORD, s);
 	}
@@ -100,12 +108,5 @@ public class REexample2 {
 	}
 
 
-	/**
-	 * This is the only function that needs to be implemented by the "user" This
-	 * is the "semantic parser" of the syntex tree denoted by nodes.
-	 **/
-	public static boolean matchRE(final String s, final Node matcher) {
-		return true;
-	}
 
 }
